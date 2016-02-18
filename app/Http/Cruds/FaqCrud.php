@@ -27,7 +27,7 @@ class FaqCrud extends BaseCrud
 
     protected function setupFormFields() {
         $textarea = new Textarea();
-        $textarea->addCustomAttribute('rows', 4);
+        $textarea->addCustomAttribute('rows', 8);
 
         return [
             'id_faq' => [
