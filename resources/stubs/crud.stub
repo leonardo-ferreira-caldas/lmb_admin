@@ -1,0 +1,27 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Helpers\Datatable\Actions\DatatableActionsBuilder;
+use App\Http\Cruds\BaseCrud;
+
+class DummyClass extends BaseCrud
+{
+    protected $table = 'DummyTable';
+    protected $visible = [];
+    protected $hidden = [];
+
+    protected function setupDatatableHeaderColumns() {
+        return [];
+    }
+
+    protected function setupDatatableBodyColumns() {
+        return [];
+    }
+
+    protected function setupActions(DatatableActionsBuilder $builder) {
+        parent::setupActions($builder);
+
+    }
+
+}

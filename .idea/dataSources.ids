@@ -1,0 +1,2128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - lamesabonita@localhost" uuid="e71b5cea-eca3-4e23-92ab-093cc82ef8a3">
+    <database-info product="MySQL" version="5.5.47-0ubuntu0.14.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="lamesabonita"/>
+      <table id="2" parent="1" name="admin_migrations"/>
+      <table id="3" parent="1" name="admin_password_resets"/>
+      <table id="4" parent="1" name="admin_users"/>
+      <table id="5" parent="1" name="avaliacao"/>
+      <table id="6" parent="1" name="banco"/>
+      <table id="7" parent="1" name="chef"/>
+      <table id="8" parent="1" name="chef_agenda"/>
+      <table id="9" parent="1" name="chef_conta_bancaria"/>
+      <table id="10" parent="1" name="chef_selo_status"/>
+      <table id="11" parent="1" name="chef_status"/>
+      <table id="12" parent="1" name="cidade"/>
+      <table id="13" parent="1" name="configuracao_site"/>
+      <table id="14" parent="1" name="culinaria"/>
+      <table id="15" parent="1" name="curso"/>
+      <table id="16" parent="1" name="curso_culinaria"/>
+      <table id="17" parent="1" name="curso_imagem"/>
+      <table id="18" parent="1" name="curso_preco"/>
+      <table id="19" parent="1" name="curso_refeicao"/>
+      <table id="20" parent="1" name="degustador"/>
+      <table id="21" parent="1" name="degustador_endereco"/>
+      <table id="22" parent="1" name="estado"/>
+      <table id="23" parent="1" name="failed_jobs"/>
+      <table id="24" parent="1" name="favorito"/>
+      <table id="25" parent="1" name="incluso_preco"/>
+      <table id="26" parent="1" name="incluso_preco_tipo"/>
+      <table id="27" parent="1" name="jobs"/>
+      <table id="28" parent="1" name="menu"/>
+      <table id="29" parent="1" name="menu_culinaria"/>
+      <table id="30" parent="1" name="menu_imagem"/>
+      <table id="31" parent="1" name="menu_preco"/>
+      <table id="32" parent="1" name="menu_refeicao"/>
+      <table id="33" parent="1" name="migrations"/>
+      <table id="34" parent="1" name="moip_integracao_logger"/>
+      <table id="35" parent="1" name="pagamento"/>
+      <table id="36" parent="1" name="pagamento_cartao"/>
+      <table id="37" parent="1" name="pagamento_metodo"/>
+      <table id="38" parent="1" name="pagamento_reembolso"/>
+      <table id="39" parent="1" name="pagamento_status"/>
+      <table id="40" parent="1" name="pagamento_taxa"/>
+      <table id="41" parent="1" name="pagamento_tracking"/>
+      <table id="42" parent="1" name="pais"/>
+      <table id="43" parent="1" name="password_resets"/>
+      <table id="44" parent="1" name="reserva"/>
+      <table id="45" parent="1" name="reserva_status"/>
+      <table id="46" parent="1" name="saque"/>
+      <table id="47" parent="1" name="saque_status"/>
+      <table id="48" parent="1" name="sexo"/>
+      <table id="49" parent="1" name="tipo_refeicao"/>
+      <table id="50" parent="1" name="users"/>
+      <table id="51" parent="1" name="faq"/>
+      <table id="52" parent="1" name="faq_tipo"/>
+      <column id="53" parent="2" name="migration">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="54" parent="2" name="batch">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="55" parent="3" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="56" parent="3" name="token">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="57" parent="3" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="58" parent="3" name="admin_password_resets_email_index">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="59" parent="3" name="admin_password_resets_token_index">
+        <columns>token</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <column id="60" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="61" parent="4" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="62" parent="4" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="63" parent="4" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="64" parent="4" name="remember_token">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="65" parent="4" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="66" parent="4" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="67" parent="4" name="admin_users_email_unique">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="68" parent="4" name="admin_users_email_unique">
+        <columns>email</columns>
+        <underlying-index>admin_users_email_unique</underlying-index>
+      </key>
+      <key id="69" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="70" parent="5" name="id_avaliacao">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="71" parent="5" name="texto">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="72" parent="5" name="nota">
+        <mandatory>1</mandatory>
+        <data-type>decimal(3,1)</data-type>
+      </column>
+      <column id="73" parent="5" name="fk_degustador">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="74" parent="5" name="fk_chef">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="75" parent="5" name="ind_aguardando_aprovacao">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="76" parent="5" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="77" parent="5" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="78" parent="5" name="avaliacao_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="79" parent="5" name="avaliacao_fk_degustador_foreign">
+        <columns>fk_degustador</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="80" parent="5" name="PRIMARY">
+        <columns>id_avaliacao</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="81" parent="5" name="avaliacao_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <ref-key>lamesabonita.chef(id_chef)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="82" parent="5" name="avaliacao_fk_degustador_foreign">
+        <columns>fk_degustador</columns>
+        <ref-key>lamesabonita.degustador(id_degustador)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="83" parent="6" name="id_banco">
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="84" parent="6" name="nome_banco">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="85" parent="7" name="id_chef">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="86" parent="7" name="fk_sexo">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="87" parent="7" name="fk_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="88" parent="7" name="fk_selo_status">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="89" parent="7" name="fk_cidade">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="90" parent="7" name="fk_estado">
+        <data-type>char(4)</data-type>
+      </column>
+      <column id="91" parent="7" name="fk_pais">
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="92" parent="7" name="saldo">
+        <mandatory>1</mandatory>
+        <data-type>decimal(9,2)</data-type>
+      </column>
+      <column id="93" parent="7" name="data_nascimento">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="94" parent="7" name="sobre_chef">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="95" parent="7" name="sobrenome">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="96" parent="7" name="cpf">
+        <mandatory>1</mandatory>
+        <data-type>varchar(14)</data-type>
+      </column>
+      <column id="97" parent="7" name="rg">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="98" parent="7" name="avatar">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="99" parent="7" name="slug">
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="100" parent="7" name="telefone">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="101" parent="7" name="foto_capa">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="102" parent="7" name="cep">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="103" parent="7" name="logradouro">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="104" parent="7" name="logradouro_numero">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="105" parent="7" name="bairro">
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="106" parent="7" name="ind_toda_cidade">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="107" parent="7" name="distancia_aceita">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="108" parent="7" name="moip_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="109" parent="7" name="moip_access_token">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="110" parent="7" name="moip_login">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="111" parent="7" name="moip_created_at">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="112" parent="7" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="113" parent="7" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="114" parent="7" name="chef_fk_cidade_foreign">
+        <columns>fk_cidade</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="115" parent="7" name="chef_fk_estado_foreign">
+        <columns>fk_estado</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="116" parent="7" name="chef_fk_pais_index">
+        <columns>fk_pais</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="117" parent="7" name="chef_fk_selo_status_foreign">
+        <columns>fk_selo_status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="118" parent="7" name="chef_fk_sexo_foreign">
+        <columns>fk_sexo</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="119" parent="7" name="chef_fk_status_foreign">
+        <columns>fk_status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="120" parent="7" name="chef_id_chef_foreign">
+        <columns>id_chef</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="121" parent="7" name="chef_slug_unique">
+        <columns>slug</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="122" parent="7" name="chef_slug_unique">
+        <columns>slug</columns>
+        <underlying-index>chef_slug_unique</underlying-index>
+      </key>
+      <foreign-key id="123" parent="7" name="chef_fk_cidade_foreign">
+        <columns>fk_cidade</columns>
+        <ref-key>~.cidade.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="124" parent="7" name="chef_fk_estado_foreign">
+        <columns>fk_estado</columns>
+        <ref-key>~.estado.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="125" parent="7" name="chef_fk_pais_foreign">
+        <columns>fk_pais</columns>
+        <ref-key>~.pais.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="126" parent="7" name="chef_fk_selo_status_foreign">
+        <columns>fk_selo_status</columns>
+        <ref-key>~.chef_selo_status.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="127" parent="7" name="chef_fk_sexo_foreign">
+        <columns>fk_sexo</columns>
+        <ref-key>~.sexo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="128" parent="7" name="chef_fk_status_foreign">
+        <columns>fk_status</columns>
+        <ref-key>~.chef_status.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="129" parent="7" name="chef_id_chef_foreign">
+        <columns>id_chef</columns>
+        <ref-key>~.users.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="130" parent="8" name="id_chef_agenda">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="131" parent="8" name="fk_chef">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="132" parent="8" name="data">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="133" parent="8" name="hora_de">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="134" parent="8" name="hora_ate">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="135" parent="8" name="deleted_at">
+        <data-type>timestamp</data-type>
+      </column>
+      <column id="136" parent="8" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="137" parent="8" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="138" parent="8" name="chef_agenda_fk_chef_data_unique">
+        <columns>fk_chef
+data</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="139" parent="8" name="chef_agenda_fk_chef_data_unique">
+        <columns>fk_chef
+data</columns>
+        <underlying-index>chef_agenda_fk_chef_data_unique</underlying-index>
+      </key>
+      <key id="140" parent="8" name="PRIMARY">
+        <columns>id_chef_agenda</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="141" parent="8" name="chef_agenda_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <ref-key>lamesabonita.chef(id_chef)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="142" parent="9" name="id_conta_bancaria">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="143" parent="9" name="fk_chef">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="144" parent="9" name="fk_banco">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="145" parent="9" name="banco_agencia">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="146" parent="9" name="banco_agencia_digito">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="147" parent="9" name="banco_conta">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="148" parent="9" name="banco_conta_digito">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="149" parent="9" name="banco_proprietario_conta">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="150" parent="9" name="moip_id">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="151" parent="9" name="moip_status">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="152" parent="9" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="153" parent="9" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="154" parent="9" name="chef_conta_bancaria_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="155" parent="9" name="PRIMARY">
+        <columns>id_conta_bancaria</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="156" parent="9" name="chef_conta_bancaria_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <ref-key>lamesabonita.chef(id_chef)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="157" parent="10" name="id_selo_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="158" parent="10" name="descricao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="159" parent="10" name="PRIMARY">
+        <columns>id_selo_status</columns>
+        <primary>1</primary>
+      </key>
+      <column id="160" parent="11" name="id_chef_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="161" parent="11" name="descricao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="162" parent="11" name="PRIMARY">
+        <columns>id_chef_status</columns>
+        <primary>1</primary>
+      </key>
+      <column id="163" parent="12" name="id_cidade">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="164" parent="12" name="fk_estado">
+        <mandatory>1</mandatory>
+        <data-type>char(4)</data-type>
+      </column>
+      <column id="165" parent="12" name="nome_cidade">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="166" parent="12" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="167" parent="12" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="168" parent="12" name="cidade_fk_estado_foreign">
+        <columns>fk_estado</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="169" parent="12" name="PRIMARY">
+        <columns>id_cidade</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="170" parent="12" name="cidade_fk_estado_foreign">
+        <columns>fk_estado</columns>
+        <ref-key>~.estado.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="171" parent="13" name="chave">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="172" parent="13" name="valor">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <key id="173" parent="13" name="PRIMARY">
+        <columns>chave</columns>
+        <primary>1</primary>
+      </key>
+      <column id="174" parent="14" name="id_culinaria">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="175" parent="14" name="nome_culinaria">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="176" parent="14" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="177" parent="14" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <key id="178" parent="14" name="PRIMARY">
+        <columns>id_culinaria</columns>
+        <primary>1</primary>
+      </key>
+      <column id="179" parent="15" name="id_curso">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="180" parent="15" name="fk_chef">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="181" parent="15" name="titulo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="182" parent="15" name="slug">
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="183" parent="15" name="descricao">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="184" parent="15" name="preco">
+        <mandatory>1</mandatory>
+        <data-type>decimal(7,2)</data-type>
+      </column>
+      <column id="185" parent="15" name="ind_aguardando_aprovacao">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="186" parent="15" name="ind_ativo">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="187" parent="15" name="qtd_maxima_cliente">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="188" parent="15" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="189" parent="15" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="190" parent="15" name="curso_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="191" parent="15" name="curso_slug_unique">
+        <columns>slug</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="192" parent="15" name="curso_slug_unique">
+        <columns>slug</columns>
+        <underlying-index>curso_slug_unique</underlying-index>
+      </key>
+      <key id="193" parent="15" name="PRIMARY">
+        <columns>id_curso</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="194" parent="15" name="curso_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <ref-key>lamesabonita.chef(id_chef)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="195" parent="16" name="fk_curso">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="196" parent="16" name="fk_culinaria">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="197" parent="16" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="198" parent="16" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="199" parent="16" name="curso_culinaria_fk_culinaria_foreign">
+        <columns>fk_culinaria</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="200" parent="16" name="PRIMARY">
+        <columns>fk_curso
+fk_culinaria</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="201" parent="16" name="curso_culinaria_fk_culinaria_foreign">
+        <columns>fk_culinaria</columns>
+        <ref-key>~.culinaria.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="202" parent="16" name="curso_culinaria_fk_curso_foreign">
+        <columns>fk_curso</columns>
+        <ref-key>~.curso.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="203" parent="17" name="id_curso_imagem">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="204" parent="17" name="fk_curso">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="205" parent="17" name="nome_imagem">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="206" parent="17" name="ind_capa">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="207" parent="17" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="208" parent="17" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="209" parent="17" name="curso_imagem_fk_curso_foreign">
+        <columns>fk_curso</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="210" parent="17" name="PRIMARY">
+        <columns>id_curso_imagem</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="211" parent="17" name="curso_imagem_fk_curso_foreign">
+        <columns>fk_curso</columns>
+        <ref-key>~.curso.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="212" parent="18" name="id_curso_preco">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="213" parent="18" name="fk_curso">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="214" parent="18" name="qtd_minima_clientes">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="215" parent="18" name="preco">
+        <mandatory>1</mandatory>
+        <data-type>decimal(7,2)</data-type>
+      </column>
+      <column id="216" parent="18" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="217" parent="18" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="218" parent="18" name="curso_preco_fk_curso_foreign">
+        <columns>fk_curso</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="219" parent="18" name="PRIMARY">
+        <columns>id_curso_preco</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="220" parent="18" name="curso_preco_fk_curso_foreign">
+        <columns>fk_curso</columns>
+        <ref-key>~.curso.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="221" parent="19" name="fk_curso">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="222" parent="19" name="fk_tipo_refeicao">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="223" parent="19" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="224" parent="19" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="225" parent="19" name="curso_refeicao_fk_tipo_refeicao_foreign">
+        <columns>fk_tipo_refeicao</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="226" parent="19" name="PRIMARY">
+        <columns>fk_curso
+fk_tipo_refeicao</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="227" parent="19" name="curso_refeicao_fk_curso_foreign">
+        <columns>fk_curso</columns>
+        <ref-key>~.curso.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="228" parent="19" name="curso_refeicao_fk_tipo_refeicao_foreign">
+        <columns>fk_tipo_refeicao</columns>
+        <ref-key>~.tipo_refeicao.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="229" parent="20" name="id_degustador">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="230" parent="20" name="fk_sexo">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="231" parent="20" name="cpf">
+        <data-type>varchar(15)</data-type>
+      </column>
+      <column id="232" parent="20" name="data_nascimento">
+        <data-type>date</data-type>
+      </column>
+      <column id="233" parent="20" name="telefone">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="234" parent="20" name="avatar">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="235" parent="20" name="ind_newsletter">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="236" parent="20" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="237" parent="20" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="238" parent="20" name="degustador_fk_sexo_foreign">
+        <columns>fk_sexo</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="239" parent="20" name="degustador_id_degustador_foreign">
+        <columns>id_degustador</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <foreign-key id="240" parent="20" name="degustador_fk_sexo_foreign">
+        <columns>fk_sexo</columns>
+        <ref-key>~.sexo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="241" parent="20" name="degustador_id_degustador_foreign">
+        <columns>id_degustador</columns>
+        <ref-key>~.users.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="242" parent="21" name="id_degustador_endereco">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="243" parent="21" name="descricao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="244" parent="21" name="fk_degustador">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="245" parent="21" name="fk_cidade">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="246" parent="21" name="fk_estado">
+        <mandatory>1</mandatory>
+        <data-type>char(4)</data-type>
+      </column>
+      <column id="247" parent="21" name="fk_pais">
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="248" parent="21" name="ind_endereco_principal">
+        <mandatory>1</mandatory>
+        <data-type>smallint(5) unsigned</data-type>
+      </column>
+      <column id="249" parent="21" name="cep">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="250" parent="21" name="logradouro">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="251" parent="21" name="logradouro_numero">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="252" parent="21" name="bairro">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="253" parent="21" name="complemento">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="254" parent="21" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="255" parent="21" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="256" parent="21" name="degustador_endereco_fk_cidade_foreign">
+        <columns>fk_cidade</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="257" parent="21" name="degustador_endereco_fk_degustador_foreign">
+        <columns>fk_degustador</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="258" parent="21" name="degustador_endereco_fk_estado_foreign">
+        <columns>fk_estado</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="259" parent="21" name="degustador_endereco_fk_pais_index">
+        <columns>fk_pais</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="260" parent="21" name="PRIMARY">
+        <columns>id_degustador_endereco</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="261" parent="21" name="degustador_endereco_fk_cidade_foreign">
+        <columns>fk_cidade</columns>
+        <ref-key>~.cidade.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="262" parent="21" name="degustador_endereco_fk_degustador_foreign">
+        <columns>fk_degustador</columns>
+        <ref-key>lamesabonita.degustador(id_degustador)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="263" parent="21" name="degustador_endereco_fk_estado_foreign">
+        <columns>fk_estado</columns>
+        <ref-key>~.estado.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="264" parent="21" name="degustador_endereco_fk_pais_foreign">
+        <columns>fk_pais</columns>
+        <ref-key>~.pais.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="265" parent="22" name="id_estado">
+        <mandatory>1</mandatory>
+        <data-type>char(4)</data-type>
+      </column>
+      <column id="266" parent="22" name="nome_estado">
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="267" parent="22" name="fk_pais">
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="268" parent="22" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="269" parent="22" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="270" parent="22" name="estado_fk_pais_index">
+        <columns>fk_pais</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="271" parent="22" name="PRIMARY">
+        <columns>id_estado</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="272" parent="22" name="estado_fk_pais_foreign">
+        <columns>fk_pais</columns>
+        <ref-key>~.pais.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="273" parent="23" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="274" parent="23" name="connection">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="275" parent="23" name="queue">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="276" parent="23" name="payload">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="277" parent="23" name="failed_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <key id="278" parent="23" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="279" parent="24" name="id_favorito">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="280" parent="24" name="fk_degustador">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="281" parent="24" name="fk_menu">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="282" parent="24" name="fk_curso">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="283" parent="24" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="284" parent="24" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="285" parent="24" name="favorito_fk_curso_foreign">
+        <columns>fk_curso</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="286" parent="24" name="favorito_fk_degustador_foreign">
+        <columns>fk_degustador</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="287" parent="24" name="favorito_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="288" parent="24" name="PRIMARY">
+        <columns>id_favorito</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="289" parent="24" name="favorito_fk_curso_foreign">
+        <columns>fk_curso</columns>
+        <ref-key>~.curso.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="290" parent="24" name="favorito_fk_degustador_foreign">
+        <columns>fk_degustador</columns>
+        <ref-key>lamesabonita.degustador(id_degustador)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="291" parent="24" name="favorito_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <ref-key>~.menu.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="292" parent="25" name="id_incluso_preco">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="293" parent="25" name="descricao">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="294" parent="25" name="fk_tipo">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="295" parent="25" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="296" parent="25" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="297" parent="25" name="incluso_preco_fk_tipo_foreign">
+        <columns>fk_tipo</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="298" parent="25" name="PRIMARY">
+        <columns>id_incluso_preco</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="299" parent="25" name="incluso_preco_fk_tipo_foreign">
+        <columns>fk_tipo</columns>
+        <ref-key>~.incluso_preco_tipo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="300" parent="26" name="id_incluso_preco_tipo">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="301" parent="26" name="descricao">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="302" parent="26" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="303" parent="26" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <key id="304" parent="26" name="PRIMARY">
+        <columns>id_incluso_preco_tipo</columns>
+        <primary>1</primary>
+      </key>
+      <column id="305" parent="27" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+      </column>
+      <column id="306" parent="27" name="queue">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="307" parent="27" name="payload">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="308" parent="27" name="attempts">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+      </column>
+      <column id="309" parent="27" name="reserved">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+      </column>
+      <column id="310" parent="27" name="reserved_at">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="311" parent="27" name="available_at">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="312" parent="27" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <index id="313" parent="27" name="jobs_queue_reserved_reserved_at_index">
+        <columns>queue
+reserved
+reserved_at</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="314" parent="27" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="315" parent="28" name="id_menu">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="316" parent="28" name="fk_chef">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="317" parent="28" name="titulo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="318" parent="28" name="slug">
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="319" parent="28" name="aperitivo">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="320" parent="28" name="entrada">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="321" parent="28" name="prato_principal">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="322" parent="28" name="preco">
+        <mandatory>1</mandatory>
+        <data-type>decimal(7,2)</data-type>
+      </column>
+      <column id="323" parent="28" name="sobremesa">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="324" parent="28" name="ind_aguardando_aprovacao">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="325" parent="28" name="ind_ativo">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="326" parent="28" name="qtd_maxima_cliente">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="327" parent="28" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="328" parent="28" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="329" parent="28" name="menu_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="330" parent="28" name="menu_slug_unique">
+        <columns>slug</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="331" parent="28" name="menu_slug_unique">
+        <columns>slug</columns>
+        <underlying-index>menu_slug_unique</underlying-index>
+      </key>
+      <key id="332" parent="28" name="PRIMARY">
+        <columns>id_menu</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="333" parent="28" name="menu_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <ref-key>lamesabonita.chef(id_chef)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="334" parent="29" name="fk_menu">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="335" parent="29" name="fk_culinaria">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="336" parent="29" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="337" parent="29" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="338" parent="29" name="menu_culinaria_fk_culinaria_foreign">
+        <columns>fk_culinaria</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="339" parent="29" name="PRIMARY">
+        <columns>fk_menu
+fk_culinaria</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="340" parent="29" name="menu_culinaria_fk_culinaria_foreign">
+        <columns>fk_culinaria</columns>
+        <ref-key>~.culinaria.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="341" parent="29" name="menu_culinaria_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <ref-key>~.menu.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="342" parent="30" name="id_menu_imagem">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="343" parent="30" name="fk_menu">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="344" parent="30" name="nome_imagem">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="345" parent="30" name="ind_capa">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="346" parent="30" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="347" parent="30" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="348" parent="30" name="menu_imagem_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="349" parent="30" name="PRIMARY">
+        <columns>id_menu_imagem</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="350" parent="30" name="menu_imagem_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <ref-key>~.menu.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="351" parent="31" name="id_menu_preco">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="352" parent="31" name="fk_menu">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="353" parent="31" name="qtd_minima_clientes">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="354" parent="31" name="preco">
+        <mandatory>1</mandatory>
+        <data-type>decimal(7,2)</data-type>
+      </column>
+      <column id="355" parent="31" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="356" parent="31" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="357" parent="31" name="menu_preco_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="358" parent="31" name="PRIMARY">
+        <columns>id_menu_preco</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="359" parent="31" name="menu_preco_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <ref-key>~.menu.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="360" parent="32" name="fk_menu">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="361" parent="32" name="fk_tipo_refeicao">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="362" parent="32" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="363" parent="32" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="364" parent="32" name="menu_refeicao_fk_tipo_refeicao_foreign">
+        <columns>fk_tipo_refeicao</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="365" parent="32" name="PRIMARY">
+        <columns>fk_menu
+fk_tipo_refeicao</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="366" parent="32" name="menu_refeicao_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <ref-key>~.menu.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="367" parent="32" name="menu_refeicao_fk_tipo_refeicao_foreign">
+        <columns>fk_tipo_refeicao</columns>
+        <ref-key>~.tipo_refeicao.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="368" parent="33" name="migration">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="369" parent="33" name="batch">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="370" parent="34" name="tipo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="371" parent="34" name="log">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="372" parent="34" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="373" parent="34" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="374" parent="35" name="id_pagamento">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="375" parent="35" name="fk_reserva">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="376" parent="35" name="fk_pagamento_metodo">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="377" parent="35" name="fk_pagamento_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="378" parent="35" name="moip_id">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="379" parent="35" name="moip_status">
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="380" parent="35" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="381" parent="35" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="382" parent="35" name="pagamento_fk_pagamento_metodo_foreign">
+        <columns>fk_pagamento_metodo</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="383" parent="35" name="pagamento_fk_pagamento_status_foreign">
+        <columns>fk_pagamento_status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="384" parent="35" name="pagamento_fk_reserva_foreign">
+        <columns>fk_reserva</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="385" parent="35" name="PRIMARY">
+        <columns>id_pagamento</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="386" parent="35" name="pagamento_fk_pagamento_metodo_foreign">
+        <columns>fk_pagamento_metodo</columns>
+        <ref-key>~.pagamento_metodo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="387" parent="35" name="pagamento_fk_pagamento_status_foreign">
+        <columns>fk_pagamento_status</columns>
+        <ref-key>~.pagamento_status.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="388" parent="35" name="pagamento_fk_reserva_foreign">
+        <columns>fk_reserva</columns>
+        <ref-key>~.reserva.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="389" parent="36" name="id_pagamento_cartao">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="390" parent="36" name="fk_pagamento">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="391" parent="36" name="moip_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="392" parent="36" name="bandeira">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="393" parent="36" name="numero_cartao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(18)</data-type>
+      </column>
+      <column id="394" parent="36" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="395" parent="36" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="396" parent="36" name="titular_cartao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <index id="397" parent="36" name="pagamento_cartao_fk_pagamento_foreign">
+        <columns>fk_pagamento</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="398" parent="36" name="PRIMARY">
+        <columns>id_pagamento_cartao</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="399" parent="36" name="pagamento_cartao_fk_pagamento_foreign">
+        <columns>fk_pagamento</columns>
+        <ref-key>~.pagamento.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="400" parent="37" name="id_pagamento_metodo">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="401" parent="37" name="nome_pagamento_metodo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="402" parent="37" name="PRIMARY">
+        <columns>id_pagamento_metodo</columns>
+        <primary>1</primary>
+      </key>
+      <column id="403" parent="38" name="id_pagamento_reembolso">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="404" parent="38" name="fk_pagamento">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="405" parent="38" name="moip_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(35)</data-type>
+      </column>
+      <column id="406" parent="38" name="valor">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8,2) unsigned</data-type>
+      </column>
+      <column id="407" parent="38" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="408" parent="38" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="409" parent="38" name="pagamento_reembolso_fk_pagamento_foreign">
+        <columns>fk_pagamento</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="410" parent="38" name="PRIMARY">
+        <columns>id_pagamento_reembolso</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="411" parent="38" name="pagamento_reembolso_fk_pagamento_foreign">
+        <columns>fk_pagamento</columns>
+        <ref-key>~.pagamento.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="412" parent="39" name="id_pagamento_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="413" parent="39" name="nome_pagamento_status">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="414" parent="39" name="PRIMARY">
+        <columns>id_pagamento_status</columns>
+        <primary>1</primary>
+      </key>
+      <column id="415" parent="40" name="id_pagamento_taxa">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="416" parent="40" name="fk_pagamento">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="417" parent="40" name="tipo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(35)</data-type>
+      </column>
+      <column id="418" parent="40" name="valor">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8,2) unsigned</data-type>
+      </column>
+      <column id="419" parent="40" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="420" parent="40" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="421" parent="40" name="pagamento_taxa_fk_pagamento_foreign">
+        <columns>fk_pagamento</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="422" parent="40" name="PRIMARY">
+        <columns>id_pagamento_taxa</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="423" parent="40" name="pagamento_taxa_fk_pagamento_foreign">
+        <columns>fk_pagamento</columns>
+        <ref-key>~.pagamento.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="424" parent="41" name="id_pagamento_tracking">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="425" parent="41" name="fk_pagamento">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="426" parent="41" name="fk_pagamento_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="427" parent="41" name="tracking_descricao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="428" parent="41" name="tracking_data">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="429" parent="41" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="430" parent="41" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="431" parent="41" name="pagamento_tracking_fk_pagamento_foreign">
+        <columns>fk_pagamento</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="432" parent="41" name="pagamento_tracking_fk_pagamento_status_foreign">
+        <columns>fk_pagamento_status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="433" parent="41" name="PRIMARY">
+        <columns>id_pagamento_tracking</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="434" parent="41" name="pagamento_tracking_fk_pagamento_foreign">
+        <columns>fk_pagamento</columns>
+        <ref-key>~.pagamento.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="435" parent="41" name="pagamento_tracking_fk_pagamento_status_foreign">
+        <columns>fk_pagamento_status</columns>
+        <ref-key>~.pagamento_status.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="436" parent="42" name="id_pais">
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+      </column>
+      <column id="437" parent="42" name="nome_pais">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="438" parent="42" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="439" parent="42" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <key id="440" parent="42" name="PRIMARY">
+        <columns>id_pais</columns>
+        <primary>1</primary>
+      </key>
+      <column id="441" parent="43" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="442" parent="43" name="token">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="443" parent="43" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="444" parent="43" name="password_resets_email_index">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="445" parent="43" name="password_resets_token_index">
+        <columns>token</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <column id="446" parent="44" name="id_reserva">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="447" parent="44" name="fk_degustador">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="448" parent="44" name="fk_degustador_endereco">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="449" parent="44" name="fk_chef">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="450" parent="44" name="fk_menu">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="451" parent="44" name="fk_curso">
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="452" parent="44" name="fk_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="453" parent="44" name="data_reserva">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="454" parent="44" name="horario_reserva">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="455" parent="44" name="qtd_clientes">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="456" parent="44" name="preco_por_cliente">
+        <mandatory>1</mandatory>
+        <data-type>decimal(8,2)</data-type>
+      </column>
+      <column id="457" parent="44" name="taxa_lmb">
+        <mandatory>1</mandatory>
+        <data-type>decimal(5,2)</data-type>
+      </column>
+      <column id="458" parent="44" name="preco_total">
+        <mandatory>1</mandatory>
+        <data-type>decimal(13,2)</data-type>
+      </column>
+      <column id="459" parent="44" name="porcentagem_chef">
+        <mandatory>1</mandatory>
+        <data-type>decimal(3,1) unsigned</data-type>
+      </column>
+      <column id="460" parent="44" name="vlr_divisao_chef">
+        <mandatory>1</mandatory>
+        <data-type>decimal(10,2) unsigned</data-type>
+      </column>
+      <column id="461" parent="44" name="vlr_divisao_lmb">
+        <mandatory>1</mandatory>
+        <data-type>decimal(10,2) unsigned</data-type>
+      </column>
+      <column id="462" parent="44" name="observacao">
+        <data-type>text</data-type>
+      </column>
+      <column id="463" parent="44" name="moip_id">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="464" parent="44" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="465" parent="44" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="466" parent="44" name="reserva_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="467" parent="44" name="reserva_fk_degustador_endereco_foreign">
+        <columns>fk_degustador_endereco</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="468" parent="44" name="reserva_fk_degustador_foreign">
+        <columns>fk_degustador</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="469" parent="44" name="reserva_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="470" parent="44" name="reserva_fk_status_foreign">
+        <columns>fk_status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="471" parent="44" name="PRIMARY">
+        <columns>id_reserva</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="472" parent="44" name="reserva_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <ref-key>lamesabonita.chef(id_chef)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="473" parent="44" name="reserva_fk_degustador_endereco_foreign">
+        <columns>fk_degustador_endereco</columns>
+        <ref-key>~.degustador_endereco.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="474" parent="44" name="reserva_fk_degustador_foreign">
+        <columns>fk_degustador</columns>
+        <ref-key>lamesabonita.degustador(id_degustador)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="475" parent="44" name="reserva_fk_menu_foreign">
+        <columns>fk_menu</columns>
+        <ref-key>~.menu.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="476" parent="44" name="reserva_fk_status_foreign">
+        <columns>fk_status</columns>
+        <ref-key>~.reserva_status.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="477" parent="45" name="id_reserva_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="478" parent="45" name="nome_status">
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <key id="479" parent="45" name="PRIMARY">
+        <columns>id_reserva_status</columns>
+        <primary>1</primary>
+      </key>
+      <column id="480" parent="46" name="id_saque">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="481" parent="46" name="fk_chef">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="482" parent="46" name="fk_conta_bancaria">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="483" parent="46" name="fk_saque_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="484" parent="46" name="valor_saque">
+        <mandatory>1</mandatory>
+        <data-type>decimal(9,2)</data-type>
+      </column>
+      <column id="485" parent="46" name="valor_taxa">
+        <mandatory>1</mandatory>
+        <data-type>decimal(9,2)</data-type>
+      </column>
+      <column id="486" parent="46" name="moip_id">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="487" parent="46" name="moip_status">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="488" parent="46" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="489" parent="46" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="490" parent="46" name="saque_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="491" parent="46" name="saque_fk_conta_bancaria_foreign">
+        <columns>fk_conta_bancaria</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="492" parent="46" name="saque_fk_saque_status_foreign">
+        <columns>fk_saque_status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="493" parent="46" name="PRIMARY">
+        <columns>id_saque</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="494" parent="46" name="saque_fk_chef_foreign">
+        <columns>fk_chef</columns>
+        <ref-key>lamesabonita.chef(id_chef)</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="495" parent="46" name="saque_fk_conta_bancaria_foreign">
+        <columns>fk_conta_bancaria</columns>
+        <ref-key>~.chef_conta_bancaria.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="496" parent="46" name="saque_fk_saque_status_foreign">
+        <columns>fk_saque_status</columns>
+        <ref-key>~.saque_status.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="497" parent="47" name="id_saque_status">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="498" parent="47" name="descricao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="499" parent="47" name="PRIMARY">
+        <columns>id_saque_status</columns>
+        <primary>1</primary>
+      </key>
+      <column id="500" parent="48" name="id_sexo">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="501" parent="48" name="descricao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="502" parent="48" name="PRIMARY">
+        <columns>id_sexo</columns>
+        <primary>1</primary>
+      </key>
+      <column id="503" parent="49" name="id_tipo_refeicao">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="504" parent="49" name="nome_tipo_refeicao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="505" parent="49" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="506" parent="49" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <key id="507" parent="49" name="PRIMARY">
+        <columns>id_tipo_refeicao</columns>
+        <primary>1</primary>
+      </key>
+      <column id="508" parent="50" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="509" parent="50" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="510" parent="50" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="511" parent="50" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="512" parent="50" name="ind_chef">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="513" parent="50" name="ind_admin">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="514" parent="50" name="ind_email_confirmado">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="515" parent="50" name="remember_token">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="516" parent="50" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="517" parent="50" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="518" parent="50" name="users_email_unique">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="519" parent="50" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="520" parent="50" name="users_email_unique">
+        <columns>email</columns>
+        <underlying-index>users_email_unique</underlying-index>
+      </key>
+      <column id="521" parent="51" name="id_faq">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+      </column>
+      <column id="522" parent="51" name="pergunta">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="523" parent="51" name="resposta">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="524" parent="51" name="fk_tipo">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <key id="525" parent="51" name="PRIMARY">
+        <columns>id_faq</columns>
+        <primary>1</primary>
+      </key>
+      <column id="526" parent="52" name="id_faq_tipo">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+      </column>
+      <column id="527" parent="52" name="descricao">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="528" parent="52" name="PRIMARY">
+        <columns>id_faq_tipo</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

@@ -1,0 +1,10 @@
+<?php2015-12-16%
+
+namespace DummyNamespace;
+
+use App\Http\Cruds\BaseCrud;
+
+class DummyClass extends BaseCrud
+{
+    //
+}
