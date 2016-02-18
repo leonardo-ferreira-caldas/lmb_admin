@@ -3,6 +3,7 @@
 namespace App\Http\Cruds;
 
 use App\Helpers\Datatable\Actions\DatatableActionsBuilder;
+use App\Helpers\Forms\Fields\Textarea;
 use App\Http\Cruds\BaseCrud;
 use DB;
 
