@@ -26,6 +26,7 @@ $(function() {
         language: {
             search: '<span>Filter:</span> _INPUT_',
             zeroRecords: "Nenhum registro encontrado.",
+            emptyTable: "Nenhum registro cadastrado.",
             infoEmpty: "Exibindo página 0 de 0 páginas",
             info: "Exibindo página _PAGE_ de _PAGES_ páginas",
             infoFiltered: "(filtrado de _MAX_ registros totais)",
