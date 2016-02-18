@@ -25,6 +25,9 @@ class FaqCrud extends BaseCrud
     }
 
     protected function setupFormFields() {
+        $textarea = new Textarea();
+        $textarea->addCustomAttribute('rows', 4);
+
         return [
             'id_faq' => [
                 'insert' => [
@@ -33,6 +36,9 @@ class FaqCrud extends BaseCrud
                 'update' => [
                     'readonly' => true
                 ]
+            ],
+            'resposta' => [
+                'type' => $textarea
             ],
             'fk_tipo' => [
                 'type' => selectTable('faq_tipo', 'id_faq_tipo', 'descricao')->defaultText("Selecione um tipo...")
